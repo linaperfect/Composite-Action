@@ -1,0 +1,7 @@
+name: "Hello Composite"
+description: "A simple composite action to echo Hello"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello from composite action"
+      shell: bash
