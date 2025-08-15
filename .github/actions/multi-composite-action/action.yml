@@ -1,0 +1,11 @@
+name: "Multi Step Composite"
+description: "An action with multiple steps"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Step 1"
+      shell: bash
+    - run: echo "Step 2"
+      shell: bash
+    - run: echo "Step 3"
+      shell: bash
