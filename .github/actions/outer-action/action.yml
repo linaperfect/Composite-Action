@@ -1,0 +1,8 @@
+name: "Outer Composite"
+description: "Outer composite action"
+runs:
+  using: "composite"
+  steps:
+    - uses: ./.github/actions/inner-composite
+    - run: echo "Hello from outer composite"
+      shell: bash
