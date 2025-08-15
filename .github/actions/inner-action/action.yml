@@ -1,0 +1,7 @@
+name: "Inner Composite"
+description: "Inner composite action"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello from inner composite"
+      shell: bash
