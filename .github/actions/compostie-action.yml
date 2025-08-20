@@ -4,10 +4,10 @@ runs:
   using: "composite"
   steps:
     - name: Run Action A
-      uses: ./.github/actions/action-a
+      uses: ./.github/actions/composite-with-checkout
 
     - name: Run Action B
-      uses: ./.github/actions/action-b
+      uses: ./.github/actions/hello-composite
 
     - name: Run Action C
-      uses: ./.github/actions/action-c
+      uses: ./.github/actions/muti-composite-action
