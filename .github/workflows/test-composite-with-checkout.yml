@@ -5,4 +5,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/composite-with-checkout
+      - uses: ./.github/actions/compostie-with-checkout
