@@ -3,6 +3,6 @@ description: "Outer composite action"
 runs:
   using: "composite"
   steps:
-    - uses: ./.github/actions/inner-composite
+    - uses: ./.github/actions/inner-action
     - run: echo "Hello from outer composite"
       shell: bash
