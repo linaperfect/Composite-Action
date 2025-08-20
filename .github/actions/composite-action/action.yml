@@ -1,1 +1,14 @@
 
+name: "Run Multiple Local Actions"
+description: "Composite action to run multiple local actions in sequence"
+runs:
+  using: "composite"
+  steps:
+    - name: Run Action A
+      uses: ./.github/actions/composite-with-checkout
+
+    - name: Run Action B
+      uses: ./.github/actions/hello-composite
+
+    - name: Run Action C
+      uses: ./.github/actions/multi-composite-action
