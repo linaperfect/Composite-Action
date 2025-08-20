@@ -1,4 +1,4 @@
-name: Test Nested Composite
+name: Test Nested Composite ---success
 on: [push]
 
 jobs:
@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/outer-composite
+      - uses: ./.github/actions/outer-action
