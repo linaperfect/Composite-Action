@@ -1,0 +1,13 @@
+name: "Run Multiple Local Actions"
+description: "Composite action to run multiple local actions in sequence"
+runs:
+  using: "composite"
+  steps:
+    - name: Run Action A
+      uses: ./.github/actions/action-a
+
+    - name: Run Action B
+      uses: ./.github/actions/action-b
+
+    - name: Run Action C
+      uses: ./.github/actions/action-c
