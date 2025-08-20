@@ -10,4 +10,4 @@ runs:
       uses: ./.github/actions/hello-composite
 
     - name: Run Action C
-      uses: ./.github/actions/muti-composite-action
+      uses: ./.github/actions/multi-composite-action
